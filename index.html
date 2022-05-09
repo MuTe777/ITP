@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+    <link rel="stylesheet" href="estilo.css">    
+</head>
+<body>
+    <header>
+        <h1>Calculadora ITP</h1>
+    </header>
+    <section>
+        <div>
+            <strong>Calcule o tamanho do seu foguetão</strong>
+            <p>Forneça sua altura em centimetros:<br>
+                <input type="number" name="txtalt" id="txtalt" min="0">
+            </p>
+            <p>Agora sua descendecia (o mais próximo possivel)<br>
+                <input type="radio" name="radsex" id="afr">
+                <label for="afr">Áfricano</label><br>
+                <input type="radio" name="radsex" id="ara">
+                <label for="ara">Árabe</label><br>
+                <input type="radio" name="radsex" id="asi">
+                <label for="asi">Ásiatico</label><br>
+                <input type="radio" name="radsex" id="cau">
+                <label for="cau">Caucasiano</label><br>
+                <input type="radio" name="radsex" id="eur">
+                <label for="eur">Europeu</label><br>
+                <input type="radio" name="radsex" id="ind">
+                <label for="ind">Índigena</label><br>
+            </p>
+            <p>Número do calçado:<br>
+                <input type="number" name="txtcalç" id="txtcalç">
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="resultado"><br>
+            <strong>Preencha as informações acima</strong>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; MuTe777</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
