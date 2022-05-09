@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercicio</title>
-    <link rel="stylesheet" href="https://github.com/MuTe777/ITP/blob/4e45956edd3495032dbb6181f467cde4dff24f4e/estilo.css">    
+    <title>Modelo de Exercicio</title>  
 </head>
+    <style>
+           body{
+    background-color: rgba(51, 139, 223, 0.63);
+    font: normal 15pt arial;
+}
+
+header{
+
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+      </style>
 <body>
     <header>
         <h1>Calculadora ITP</h1>
@@ -47,4 +73,41 @@
     </footer>
     <script src="https://github.com/MuTe777/ITP/blob/2c6b8a557501c908b6a77889739c93681f89125f/script.js"></script>
 </body>
+        <script>
+           function verificar(){
+    var alt = document.getElementById ('txtalt')
+    var calç = document.getElementById ('txtcalç')
+    var res = document.getElementById ('resultado')
+    if(alt.value.length <= 0 || calç.value.length <= 0){
+        window.alert('Verifique os dados e tente novamente')
+    }else
+        var fdes = document.getElementsByName ('radsex')
+        var falt = Number(alt.value) /10
+        var fcalç = Number(calç.value) /15
+        var div = 2 + 0.10
+        var des = '' 
+        var num1 = parseFloat(des)   
+        //var desn = parseFloat(des)
+        //var desn = parseInt(des) + des
+        //var res1 = Number(((falt - des.value) + (fcalç + 16))) /2.1
+        
+
+        if (fdes[0].checked){
+            des = ((falt - 0 )+(fcalç + 16)) /div                         //0
+       }else if (fdes[1].checked){
+            des = ((falt - 2 )+(fcalç + 16)) /div                         //2
+       }else if (fdes[2].checked){
+            des = ((falt - 4 )+(fcalç + 16)) /div                         //4
+       }else if (fdes[3].checked){
+            des = ((falt - 1 )+(fcalç + 16)) /div                         //1
+       }else if (fdes[4].checked){
+            des = ((falt - 3 )+(fcalç + 16)) /div                         //3
+       }else {  (fdes[5].checked)
+            des = ((falt - 3 )+(fcalç + 16)) /div                         //3
+       } 
+    
+            res.innerHTML = `Sua pistola mede aproximadamente ${des}, belo pau amigo`
+    
+}
+    </script>            
 </html>
