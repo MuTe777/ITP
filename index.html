@@ -44,7 +44,7 @@ footer{
                 <input type="number" name="txtalt" id="txtalt" min="0">
             </p>
             <p>Agora sua descendecia (o mais próximo possivel)<br>
-                <input type="radio" name="radsex" id="afr">
+                <input type="radio" name="radsex" id="afr" checked>
                 <label for="afr">Áfricano</label><br>
                 <input type="radio" name="radsex" id="ara">
                 <label for="ara">Árabe</label><br>
@@ -86,7 +86,8 @@ footer{
         var fcalç = Number(calç.value) /15
         var div = 2 + 0.10
         var des = '' 
-        var num1 = parseFloat(des)
+        img.setAttribute('src', 'unknown.png')
+        
         
 
         if (fdes[0].checked){
@@ -102,9 +103,9 @@ footer{
        }else {  (fdes[5].checked)
             des = ((falt - 3 )+(fcalç + 16)) /div                         //3
        } 
-    
-            res.innerHTML = `Sua pistola mede aproximadamente ${des}, belo pau amigo`
-    
+            res.style.textAlign = 'center'
+            res.innerHTML = `Sua pistola mede aproximadamente ${des}.<br>`
+            res.appendChild (img)
 }
     </script>            
 </html>
